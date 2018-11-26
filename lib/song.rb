@@ -55,7 +55,9 @@ class Song
     file_array = filename.chomp(".mp3").split(" - ")
     song = self.create_by_name(file_array[1])
     song.artist_name = file_array[0]
-    song
   end 
   
+  def self.destroy_all
+    self.all.clear
+  end
 end
