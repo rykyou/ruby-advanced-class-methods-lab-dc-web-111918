@@ -49,7 +49,5 @@ class Song
     song = self.create_by_name(file_array[1])
     song.artist_name = file_array[0]
   end 
-    
-  end 
   
 end
